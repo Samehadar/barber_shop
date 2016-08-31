@@ -1,0 +1,3 @@
+{"email": "stels95@list.ru"; "text": "123
+new line
+!"}
