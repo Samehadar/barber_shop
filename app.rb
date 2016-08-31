@@ -24,9 +24,10 @@ post '/visit' do
 	phone = params[:phone]
 	date_time = params[:date_time]
 	barber = params[:select_barber]
+	color = params[:color]
 	
 	file = File.open "./public/users.txt", "a"
-	file.write "{\"username\": \"#{username}\"; \"phone\": \"#{phone}\"; \"date_time\": \"#{date_time}\"; \"barber\": \"#{barber}\"}\n"
+	file.write "{\"username\": \"#{username}\"; \"phone\": \"#{phone}\"; \"date_time\": \"#{date_time}\"; \"barber\": \"#{barber}\"; \"color\": \"#{color}\"}\n"
 	file.close 
 
 	@message = "#{username}, #{barber} will waiting for you at #{date_time}!"
